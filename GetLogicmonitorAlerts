@@ -1,0 +1,209 @@
+
+$username = $env:UserName
+$outputfolder = "C:\Users\$username\Downloads"
+
+
+
+
+$accessId = ''
+$accessKey = ''
+
+$HowManyDays = 90
+
+
+$rp = '/alert/alerts'
+$epochnow = [Math]::Round((New-TimeSpan -Start (Get-Date "01/01/1970") -End (Get-Date)).TotalSeconds)
+$Xdaysagoepoch = [Math]::Round((New-TimeSpan -Start (Get-Date "01/01/1970") -End ((Get-Date).AddDays(($HowManyDays*-1)))).TotalSeconds)
+$timequeryparamClearedTrue = "filter=startEpoch>:$Xdaysagoepoch"  + "," + "cleared~rue"
+$timequeryparamClearedFalse = "filter=startEpoch>:$Xdaysagoepoch"  + "," + "cleared~alse"
+$filterlist = $timequeryparamClearedTrue, $timequeryparamClearedFalse
+$sortqueryparam = 'sort=startEpoch'
+$size = 'size=500'
+$customcolumns = 'customColumns=%2523%2523CustomerName%2523%2523'
+$qp = '?' + $sortqueryparam + '&' + $size + '&' + $customcolumns
+
+
+
+
+
+$overallcount = 0
+$alertlist = foreach ($filter in $filterlist){
+    $alertcount = 500
+    $offset = 0
+    Write-host "`n Checking for $filter `n"
+    While ($alertcount -eq 500){
+        #Write-Host "Offset is $offset"
+        $alerts = LMAPICall -method get -company atsg -accessid $accessId -accesskey $accessKey -resourcePath $rp -queryparams ("$qp&$filter&offset=$offset")
+        $alertcount = $alerts.data.items.Count
+        if ($alertcount -eq 500){$offset += 500}
+
+        $overallcount += $alertcount
+        Write-Host "Current overall count is $overallcount"
+            $alerts.data.items
+
+    }
+
+}
+
+
+
+
+
+
+$cleanedalertlist = foreach ($thisalert in $alertlist){
+
+    $severitytext = if ($thisalert.severity -eq 2) {"Warning"} elseif ($thisalert.severity -eq 3) {"Error"} elseif ($thisalert.severity -eq 4) {"Critical"}
+    $uniquecombo = "$($thisalert.monitorObjectName)"
+    $uniquecombo += "::::" + "$($thisalert.resourceTemplateName)"
+    $uniquecombo += "::::" + "$($thisalert.dataPointName)"
+    $uniquecombowithseverity = $uniquecombo + "::::" + "$severitytext"
+
+    $uniquedatasourceanddatapoint = "$($thisalert.resourceTemplateName)" + "::::" + "$($thisalert.dataPointName)"
+
+   
+    $duration = if ($thisalert.endEpoch -eq 0){[timespan]::fromseconds($epochnow - $thisalert.startEpoch)}Else{[timespan]::fromseconds($thisalert.endEpoch - $thisalert.startEpoch)}
+    $durationsecs = $duration.TotalSeconds
+    $DurationDaysHrsMinSecs = "{0:ddd\.hh\:mm\:ss}" -f  $duration
+
+    [datetime]$origin = '1970-01-01 00:00:00'
+    $startedDatetime =  (Get-date (Get-Date $origin).AddSeconds($thisalert.startEpoch).ToLocalTime() -Format 'yyyy-MM-dd HH:mm:ss')
+    $endedDatetime =  if ($thisalert.endEpoch -eq 0){}Else{(Get-date (Get-Date $origin).AddSeconds($thisalert.endEpoch).ToLocalTime() -Format 'MM-dd-yy HH:mm:ss')}
+    
+
+    [PSCustomObject]@{
+        id = $thisalert.internalId
+        AlertType = $thisalert.type
+        startedEpoch = $thisalert.startEpoch
+        endedEpoch = $thisalert.endEpoch
+        StartedDateTime = $startedDatetime
+        EndedDateTime = $endedDatetime
+        acked = $thisalert.acked
+        ackedBy = $thisalert.ackedBy
+        ackComment = $thisalert.ackComment
+        rule = $thisalert.rule
+        cleared = $thisalert.cleared
+        SeverityCode =  $thisalert.severity
+        Severity = $severitytext
+        DurationSecs = $durationsecs
+        DurationDaysHrsMinSecs =  $DurationDaysHrsMinSecs 
+        SDTed = $thisalert.sdted
+        AlertValue = $thisalert.alertValue
+        Threshold = $thisalert.threshold
+        datasourceName = $thisalert.resourceTemplateName
+        InstanceName = $thisalert.instanceName
+        datapointName = $thisalert.dataPointName
+        ObjectName = $thisalert.monitorObjectName
+        CustomerName = $thisalert.customColumns.'##CustomerName##' 
+        Unique_Device_Datasource_Datapoint =  $uniquecombo
+        Unique_Device_Datasource_Datapoint_Severity = $uniquecombowithseverity
+        Unique_DataSource_Datapoint = $uniquedatasourceanddatapoint
+        Unique_DataSource_Datapoint_Severity = ($uniquedatasourceanddatapoint + "::::$severitytext")
+
+    }
+
+} 
+
+# $cleanedalertlist | Sort startedEpoch -Descending | Where {$_.SDTed -match "false"} | Out-gridview
+$cleanedalertlist | Sort startedEpoch -Descending | Where {$_.SDTed -match "false"} | Export-Csv "$outputfolder\$HowManyDays-days-AllNonSDTAlerts.csv" -NoTypeInformation -NoClobber
+
+
+####################################################
+$UniqueDevDsDpList =  $cleanedalertlist.Unique_Device_Datasource_Datapoint | Sort-Object -Unique
+$UniqueOverallDsDpList = $cleanedalertlist.Unique_Datasource_Datapoint | Sort-Object -Unique
+
+# $UniqueDevDsDpList.Count
+# $UniqueOverallDsDpList.Count
+
+
+$CountPerUniqueDevDsDp = foreach ($UDDD in $UniqueDevDsDpList){
+    
+    [array]$thisuddd = $cleanedalertlist.Where({$_.Unique_Device_Datasource_Datapoint -eq "$UDDD" -and $_.SDTed -match "false"}) | Sort startedEpoch -Descending
+    if ($thisuddd.Count -lt 1) {} Else {
+
+        if ($thisuddd.count -lt 2){$StartedEpochDiffList = $null; $TimespanSinceLastOccurence = $null} Else {
+            $StartedEpochDiffList = @(for ($i=0; $i -lt $thisuddd.Count-1; $i++) {$thisuddd[$i].startedEpoch - $thisuddd[$i+1].startedEpoch})
+            $TimespanSinceLastOccurence = [timespan]::FromSeconds($StartedEpochDiffList[0]) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
+            $AvgBreakDurationBetweenOccurences = [timespan]::FromSeconds(($StartedEpochDiffList|Measure-Object -sum).sum/$StartedEpochDiffList.count) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
+            
+          
+
+           
+        }
+
+        [PSCustomObject]@{
+            Count = $thisuddd.Count
+            Device = $thisuddd[0].ObjectName
+            Datasource = $thisuddd[0].datasourceName
+            Datapoint = $thisuddd[0].datapointName
+            CustomerName = $thisuddd[0].CustomerName
+            LatestOccurence = $thisuddd[0].StartedDateTime
+            LatestDuration = $thisuddd[0].DurationDaysHrsMinSecs
+            AverageDuration = [timespan]::fromseconds((($thisuddd.DurationSecs|Measure-Object -Sum).Sum)/($thisuddd.Count))| % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
+            BreakDurationSincePreviousOccurence = $TimespanSinceLastOccurence
+            AvgBreakDurationBetweenOccurences = $AvgBreakDurationBetweenOccurences
+            #"1HourClusterCount" = $1hourclusters.Count
+            #"3HourClusterCount" = $3hourclusters.Count
+            #"6HourClusterCount" = $6hourclusters.Count
+            #"12HourClusterCount" = $12hourclusters.Count
+            #"1HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $1hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            #"3HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $3hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            #"6HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $6hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            #"12HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $12hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            AlertList = $thisuddd        
+        }
+    }
+
+} 
+
+
+# $CountPerUniqueDevDsDp | Out-GridView
+$CountPerUniqueDevDsDp | Export-Csv "$outputfolder\$HowManyDays-days-UniqueDeviceDatasourceDatapoint.csv" -NoTypeInformation -NoClobber
+
+
+
+
+$CountPerUniqueOverallDsDp = foreach ($UODD in $UniqueOverallDsDpList){
+    
+    [array]$thisuodd = $cleanedalertlist.Where({$_.Unique_Datasource_Datapoint -eq "$UODD" -and $_.SDTed -match "false"}) | Sort startedEpoch -Descending
+    if ($thisuodd.Count -lt 1) {} Else {
+
+        if ($thisuodd.count -lt 2){$StartedEpochDiffList = $null; $TimespanSinceLastOccurence = $null} Else {
+            $StartedEpochDiffList = @(for ($i=0; $i -lt $thisuodd.Count-1; $i++) {$thisuodd[$i].startedEpoch - $thisuodd[$i+1].startedEpoch})
+            $TimespanSinceLastOccurence = [timespan]::FromSeconds($StartedEpochDiffList[0]) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
+            $AvgBreakDurationBetweenOccurences = [timespan]::FromSeconds(($StartedEpochDiffList|Measure-Object -sum).sum/$StartedEpochDiffList.count) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
+            
+          
+
+           
+        }
+
+        [PSCustomObject]@{
+            Count = $thisuodd.Count
+            Device = $thisuodd[0].ObjectName
+            Datasource = $thisuodd[0].datasourceName
+            Datapoint = $thisuodd[0].datapointName
+            CustomerName = $thisuodd[0].CustomerName
+            LatestOccurence = $thisuodd[0].StartedDateTime
+            LatestDuration = $thisuodd[0].DurationDaysHrsMinSecs
+            AverageDuration = [timespan]::fromseconds((($thisuddd.DurationSecs|Measure-Object -Sum).Sum)/($thisuodd.Count))| % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
+            BreakDurationSincePreviousOccurence = $TimespanSinceLastOccurence
+            AvgBreakDurationBetweenOccurences = $AvgBreakDurationBetweenOccurences
+            #"1HourClusterCount" = $1hourclusters.Count
+            #"3HourClusterCount" = $3hourclusters.Count
+            #"6HourClusterCount" = $6hourclusters.Count
+            #"12HourClusterCount" = $12hourclusters.Count
+            #"1HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $1hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            #"3HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $3hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            #"6HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $6hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            #"12HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $12hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
+            AlertList = $thisuodd        
+        }
+    }
+
+} 
+
+
+# $CountPerUniqueOverallDsDp | Out-GridView
+$CountPerUniqueOverallDsDp | Export-Csv "$outputfolder\$HowManyDays-days-UniqueOverallDatasourceDatapoint.csv" -NoTypeInformation -NoClobber
+
+
