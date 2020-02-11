@@ -3,7 +3,7 @@ $username = $env:UserName
 $outputfolder = "C:\Users\$username\Downloads"
 
 
-
+$HowManyDays = 10
 
 $accessId = ''
 $accessKey = ''
