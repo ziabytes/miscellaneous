@@ -35,8 +35,56 @@ $qp = '?' + $sortqueryparam + '&' + $sizeparam + '&' + $customcolumns
 
 
 
+########################################################################################
+Function LMAPICall ($method, $company, $accessid, $accesskey,$resourcePath,$body,$queryparams) {
 
-(Measure-Command -Expression {
+<# request details #>
+$httpVerb = $method.ToUpper()
+if ($httpVerb -eq "get") {$body = $null}
+
+<# Construct URL #>
+$url = 'https://' + $company + '.logicmonitor.com/santaba/rest' + $resourcePath 
+
+<# Get current time in milliseconds #>
+$epoch = [Math]::Round((New-TimeSpan -start (Get-Date -Date "1/1/1970") -end (Get-Date).ToUniversalTime()).TotalMilliseconds)
+
+<# Concatenate Request Details #>
+$requestVars = $httpVerb + $epoch + $body + $resourcePath
+
+<# Construct Signature #>
+$hmac = New-Object System.Security.Cryptography.HMACSHA256
+$hmac.Key = [Text.Encoding]::UTF8.GetBytes($accessKey)
+$signatureBytes = $hmac.ComputeHash([Text.Encoding]::UTF8.GetBytes($requestVars))
+$signatureHex = [System.BitConverter]::ToString($signatureBytes) -replace '-'
+$signature = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($signatureHex.ToLower()))
+
+<# Construct Headers #>
+$auth = 'LMv1 ' + $accessId + ':' + $signature + ':' + $epoch
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Authorization",$auth)
+$headers.Add("Content-Type",'application/json')
+#$headers.Add("Accept",'application/json')
+
+<# Make Request #>
+if($httpVerb -eq "get"){
+    If ($queryparams.length -gt 0){
+        $response = Invoke-RestMethod -Uri $($url + $queryparams + '&v=1') -Method Get -Header $headers
+    } Else{
+    $response = Invoke-RestMethod -Uri $($url + "?v=1") -Method Get -Header $headers }
+}
+Elseif ($httpVerb -eq "put"){
+    $response = Invoke-RestMethod -Uri $($url) -Method Put -Header $headers -Body $body}
+Elseif ($httpVerb -eq "Patch"){
+    $queryparams = '?patchFields=customProperties&opType=refresh'
+        $response = Invoke-RestMethod -Uri $($url + $queryparams + '&v=1') -Method Patch -Header $headers -Body $body}
+
+Else {Write-host "UNACCEPTABLE REST METHOD"; break}
+
+$response
+}
+#############################################################################################
+
+
 $overallcount = 0
 $alertlist = foreach ($filter in $timedfilterlist){
     $alertcount = $size
@@ -59,7 +107,7 @@ $alertlist = foreach ($filter in $timedfilterlist){
 
 }
 
-}).TotalMinutes
+
 # $alertlist  | Out-GridView
 
 
