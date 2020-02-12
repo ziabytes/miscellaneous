@@ -192,20 +192,21 @@ $groupbyCustomerName = $cleanedalertlist | Group-Object CustomerName | Sort Coun
 # $udddi = $groupbyudddi[10]
 
 
-Write-Host "`n Doing Count Per Unique 'Device' Datasource Instance"
+Write-Host "`n Doing Alert Count Per Unique Datasource Across the ENTIRE Environment"
 
-$CountPerUniqueDevDsDpInst = foreach ($UDDDI in $groupbyudddi){
+$(Measure-Command -Expression {
+$CountPerUniqueOverallDsDp = foreach ($UODD in $groupbyUODD){
     
-    $averagedurationsecs = ($UDDDI.Group.DurationSecs | Measure-Object -Average).Average
-    $TimespanSinceLastOccurenceSecs = $UDDDI.Group.startedEpoch[0] - $UDDDI.Group.startedEpoch[1]
+    $averagedurationsecs = ($UODD.Group.DurationSecs | Measure-Object -Average).Average
+    $TimespanSinceLastOccurenceSecs = $UODD.Group.startedEpoch[0] - $UODD.Group.startedEpoch[1]
     $TimespanSinceLastOccurence = [timespan]::FromSeconds($TimespanSinceLastOccurenceSecs) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
-    $StartedEpochDiffList = @(for ($i=0; $i -lt $UDDDI.Count-1; $i++) {$UDDDI.Group[$i].startedEpoch - $UDDDI.Group[$i+1].startedEpoch})
+    $StartedEpochDiffList = @(for ($i=0; $i -lt $UODD.Count-1; $i++) {$UODD.Group[$i].startedEpoch - $UODD.Group[$i+1].startedEpoch})
     $AvgBreakDurationBetweenOccurencesSecs = ($StartedEpochDiffList | Measure-Object -Average).Average
     $AvgBreakDurationBetweenOccurences = [timespan]::FromSeconds(($AvgBreakDurationBetweenOccurencesSecs)) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
             
     
-    <#      if ($thisudddi.count -lt 2){$StartedEpochDiffList = $null; $TimespanSinceLastOccurence = $null} Else {
-            $StartedEpochDiffList = @(for ($i=0; $i -lt $thisudddi.Count-1; $i++) {$thisudddi[$i].startedEpoch - $thisudddi[$i+1].startedEpoch})
+    <#      if ($thisUDDD.count -lt 2){$StartedEpochDiffList = $null; $TimespanSinceLastOccurence = $null} Else {
+            $StartedEpochDiffList = @(for ($i=0; $i -lt $thisUDDD.Count-1; $i++) {$thisUDDD[$i].startedEpoch - $thisUDDD[$i+1].startedEpoch})
             $TimespanSinceLastOccurence = [timespan]::FromSeconds($StartedEpochDiffList[0]) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
             $AvgBreakDurationBetweenOccurences = [timespan]::FromSeconds(($StartedEpochDiffList|Measure-Object -sum).sum/$StartedEpochDiffList.count) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
             
@@ -215,14 +216,15 @@ $CountPerUniqueDevDsDpInst = foreach ($UDDDI in $groupbyudddi){
         } #>
 
         [PSCustomObject]@{
-            Count = $UDDDI.Count
-            Device = $UDDDI.Group[0].ObjectName
-            Datasource = $UDDDI.Group[0].datasourceName
-            Datapoint = $UDDDI.Group[0].datapointName
-            CustomerName = $UDDDI.Group[0].CustomerName
-            Instance = $UDDDI.Group[0].InstanceName
-            LatestOccurence = $UDDDI.Group[0].StartedDateTime
-            LatestDuration = $UDDDI.Group[0].DurationDaysHrsMinSecs
+            Count = $UODD.Count
+            Datasource_Datapoint = $UODD.Name
+            #Device = $UODD.Group[0].ObjectName
+            Datasource = $UODD.Group[0].datasourceName
+            Datapoint = $UODD.Group[0].datapointName
+            #CustomerName = $UODD.Group[0].CustomerName
+            #Instance = $UODD.Group[0].InstanceName
+            LatestOccurence = $UODD.Group[0].StartedDateTime
+            LatestDuration = $UODD.Group[0].DurationDaysHrsMinSecs
             AverageDuration = [timespan]::FromSeconds($averagedurationsecs) | % { "{0:ddd\.hh\:mm\:ss}" -f  $_ }
             BreakDurationSincePreviousOccurence = $TimespanSinceLastOccurence
             AvgBreakDurationBetweenOccurences = $AvgBreakDurationBetweenOccurences
@@ -235,17 +237,17 @@ $CountPerUniqueDevDsDpInst = foreach ($UDDDI in $groupbyudddi){
             #"6HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $6hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
             #"12HourClusterTimeList" = if ($StartedEpochDiffList -gt 0){@(foreach ($n in $12hourclusters) {$thisuddd[$n].StartedDateTime}) -join(', ')} Else {$null}
             
-            #AlertList = $thisudddi        
+            #AlertList = $thisUDDD        
         }
     
 
-} 
 
+}  
+}).TotalMinutes | % {$thistime = $_; Write-Host "Completed in $thistime mins "}
 
-# $CountPerUniqueDevDsDpInst | Out-girdview
-Write-Host "Exporting CSV to $outputfolder\$HowManyDays-days-UniqueDeviceDatasourceDatapointInstance.csv"
-$CountPerUniqueDevDsDpInst | Export-Csv "$outputfolder\$HowManyDays-days-UniqueDeviceDatasourceDatapointInstance.csv" -NoTypeInformation -Force
-
+# $CountPerUniqueOverallDsDp | Out-GridView
+Write-Host "Exporting CSV to $outputfolder\$HowManyDays-days-UniqueOverallDatasourceDatapoint.csv"
+$CountPerUniqueOverallDsDp | Export-Csv "$outputfolder\$HowManyDays-days-UniqueOverallDatasourceDatapoint.csv" -NoTypeInformation -Force
 
 
 
