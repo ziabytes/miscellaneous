@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-03-31 16:16:06">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Push Integration Base 2</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>6566b9642f93201024f0f7ecf699b6eb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:05</sys_created_on>
+<sys_id>2a9ccae42fd3201024f0f7ecf699b6cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:05</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_af58dec11b72a410cdc7fc86cc4bcbf6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="af58dec11b72a410cdc7fc86cc4bcbf6" sys_domain="global" table="u_push_integration_entries" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4e3306e02fd3201024f0f7ecf699b64a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_created_on</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ce3306e02fd3201024f0f7ecf699b64a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_updated_on</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>423306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_created_by</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c23306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_updated_by</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>463306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_sent_or_received</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c63306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_call_type</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4a3306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_status_code</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ca3306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_incident</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4e3306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ce3306e02fd3201024f0f7ecf699b64b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_external_inc_number</element><position>10</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>423306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_external_inc_sysid</element><position>11</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c23306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_attachment</element><position>12</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>463306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_journal</element><position>13</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c63306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>14</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4a3306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_target_url</element><position>15</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ca3306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>16</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4e3306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_call_method</element><position>17</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ce3306e02fd3201024f0f7ecf699b64c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_integration</element><position>18</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>423306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>19</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c23306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_integration_type</element><position>20</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>463306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>21</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c63306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_content</element><position>22</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4a3306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_responsebody</element><position>23</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ca3306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>24</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4e3306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_company</element><position>25</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ce3306e02fd3201024f0f7ecf699b64d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>26</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>423306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_user</element><position>27</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c23306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>28</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>463306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_api_endpoint</element><position>29</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c63306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_retry</element><position>30</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4a3306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_journal_sys_id</element><position>31</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ca3306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_journal_value</element><position>32</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>4e3306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_journal_type</element><position>33</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>ce3306e02fd3201024f0f7ecf699b64e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_attachment_sys_id</element><position>34</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>423306e02fd3201024f0f7ecf699b64f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_error_message</element><position>35</position><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:35:05</sys_created_on><sys_id>c23306e02fd3201024f0f7ecf699b64f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_push_integration_entries" sys_domain="global" view="Default view">af58dec11b72a410cdc7fc86cc4bcbf6</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:35:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_push_integration_entries</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>azia</sys_created_by><sys_created_on>2021-03-08 09:53:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>af58dec11b72a410cdc7fc86cc4bcbf6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_push_integration_entries</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_af58dec11b72a410cdc7fc86cc4bcbf6</sys_update_name><sys_updated_by>azia</sys_updated_by><sys_updated_on>2021-03-08 09:53:04</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-2010117307</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>329cc6682fd3201024f0f7ecf699b681</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888ec88130000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>4a3306e07ad320108e91613f68ec8252</update_guid>
+<update_guid_history>4a3306e07ad320108e91613f68ec8252:-2010117307,9de106a023d3201009908c39267a39c0:-2137970869,70c1826cfb9320109f5557e2f7878d4c:-1421036234,3e99f52cb0932010edd4caee25fdccfc:-1843426161,6d39f92c7d9320100a2f42a5718e6b87:-613794888,888c10995ab6a410d60acf775a8272f5:1834533692,b82d8bc585f2a4100e36c5648bdf9f49:1376599501,a75892055b72a4105ef9535a77916559:1193888857,6758dec12072a410f5f6f18833e8f6fa:89998427</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_push_integration_entries_u_attachment_sys_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_attachment_sys_id" label="Attachment SYS ID" language="en" table="u_push_integration_entries"><sys_documentation action="INSERT_OR_UPDATE"><element>u_attachment_sys_id</element><help/><hint/><label>Attachment SYS ID</label><language>en</language><name>u_push_integration_entries</name><plural>Attachment SYS IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:29:18</sys_created_on><sys_id>d9e106a02fd3201024f0f7ecf699b6c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Attachment SYS ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_push_integration_entries_u_attachment_sys_id_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:29:18</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>614209639</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>329ccae42fd3201024f0f7ecf699b6cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888e73af00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Attachment SYS ID</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>d5e106a0c6d32010a32f5a71e3d412c9</update_guid>
+<update_guid_history>d5e106a0c6d32010a32f5a71e3d412c9:614209639</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_99acc0ea1bf66810cdc7fc86cc4bcb58</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_push_integration_entries&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="u_push_integration_entries"&gt;u_call_type=Journal^u_sent_or_received=sent^sys_created_by!=apiuser^EQ&lt;item endquery="false" field="u_call_type" goto="false" newquery="false" operator="=" or="false" value="Journal"/&gt;&lt;item endquery="false" field="u_sent_or_received" goto="false" newquery="false" operator="=" or="false" value="sent"/&gt;&lt;item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Journal Inc Send&lt;/name&gt;&lt;order&gt;4000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //////////////////////////////////
+    //Modify to match environment
+    var basicauthconfigname = 'azia';
+
+   ////////////////////////////////////////////////////	
+    var auth = new GlideRecord('sys_auth_profile_basic');
+    auth.addQuery('name', basicauthconfigname);
+    auth.query();
+
+    var creds = "";
+    if (auth.next()) {
+        creds = auth.sys_id;
+    }
+    //////////////////////////////////////////////////////
+
+
+    var gdt = new GlideDateTime();
+    gdt.addSeconds(-1);
+
+    var incsysid = current.u_incident;
+    var external_inc_sys_id = current.u_external_inc_sysid;
+    var thisentrysysid = current.sys_id;
+    var thisentryjournalsysid = current.u_journal_sys_id;
+
+    var targeturl = current.u_target_url;
+    var endpoint = current.u_api_endpoint;
+    var fullurl = targeturl + endpoint + "?inc_sys_id=" + external_inc_sys_id;
+
+
+
+    var thisinc = new GlideRecord('incident');
+    thisinc.get(incsysid);
+
+
+
+    // Create Empty Object to populate later
+    var contentobj = {};
+
+
+
+    //Set Critical Values
+    contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
+    contentobj.u_external_inc_sysid = current.getValue('u_incident');
+
+
+
+    ////////////////////////////////////////////////////////////
+    //var latestjournal = new GlideRecord('sys_journal_field');
+    //latestjournal.addQuery('element_id', incsysid);
+    //var ljOr = latestjournal.addQuery('element', 'comments');
+    //ljOr.addOrCondition('element', 'work_notes');
+    //latestjournal.orderByDesc('sys_created_on');
+    //latestjournal.addQuery('sys_created_on', '&gt;=', gdt);
+    //latestjournal.setLimit(1);
+    //latestjournal.query();
+    //latestjournal.get(thisentryjournalsysid);
+
+    var thisjournalsysid = "";
+    var thisjournalcreatedby = "";
+    var thisjournalvalue = "";
+    var thisjournalcreatedon = "";
+    var thisjournalelement = "";
+    /*
+        if (latestjournal.next()) {
+            thisjournalsysid = latestjournal.sys_id;
+            thisjournalcreatedby = latestjournal.getDisplayValue('sys_created_by');
+            thisjournalvalue = latestjournal.value.toString();
+            thisjournalcreatedon = latestjournal.sys_created_on.toString();
+            thisjournalelement = latestjournal.element.toString();
+        }
+    */
+    //thisjournalsysid = latestjournal.sys_id;
+    thisjournalcreatedby = current.getDisplayValue('sys_created_by').toString();
+	thisjournalcreatedbyid = current.getValue('sys_created_by').toString();
+    thisjournalvalue = current.u_journal_value.toString();
+    thisjournalcreatedon = current.sys_created_on.toString();
+    thisjournalelement = current.u_journal_type.toString();
+	
+
+	var userfullname = gs.getUserDisplayName();
+	
+
+	gs.log('arnold_porter_dev 01  by user ' + userfullname  + "\n" +"type=" + thisjournalelement +'\n with value \n' + thisjournalvalue )
+	
+    var journalobj = {};
+
+    var journalidcheck = new GlideRecord('u_push_integration_entries');
+    journalidcheck.addQuery('u_incident', incsysid);
+	journalidcheck.addQuery('u_journal_type', thisjournalelement);
+	journalidcheck.addQuery('u_journal_value', thisjournalvalue);
+    journalidcheck.query();
+    if (journalidcheck.getRowCount() == 1) {
+        journalobj.user = userfullname;
+        journalobj.value = thisjournalvalue;
+        journalobj.createdon = thisjournalcreatedon;
+        journalobj.element = thisjournalelement;
+        if (thisjournalelement == 'comments') {
+            contentobj.comments = journalobj;
+        }
+        if (thisjournalelement == 'work_notes') {
+            contentobj.work_notes = journalobj;
+        }
+        //current.u_journal = thisjournalsysid;
+        //current.u_journal_sys_id = thisjournalsysid;
+			gs.log('arnold_porter_dev 02  ' + thisjournalvalue)
+    }
+
+
+    //// Convert Content Object to JSON String
+    var contentstr = JSON.stringify(contentobj);
+    current.u_content = contentstr;
+    current.update();
+
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    var update_inc_request = new sn_ws.RESTMessageV2();
+    update_inc_request.setHttpMethod('POST');
+    update_inc_request.setEndpoint(fullurl);
+    update_inc_request.setAuthenticationProfile('basic', creds);
+    update_inc_request.setRequestHeader('Content-Type', 'application/json');
+    update_inc_request.setRequestBody(contentstr);
+
+
+    var update_inc_response = update_inc_request.execute();
+    var update_inc_httpResponseStatus = update_inc_response.getStatusCode();
+    var update_inc_responsebody = update_inc_response.getBody();
+
+    var parsedresponse = JSON.parse(update_inc_responsebody);
+    parsedupdatetime = new GlideDateTime(parsedresponse.result.incident_last_updated_on);
+
+    var thisentry = new GlideRecord('u_push_integration_entries');
+    thisentry.get(thisentrysysid);
+
+    thisentry.u_responsebody = update_inc_responsebody;
+    thisentry.u_status_code = update_inc_httpResponseStatus;
+    thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
+    thisentry.u_external_inc_number = parsedresponse.result.incident_number;
+    thisentry.update();
+
+
+
+
+    /////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////
+    //////////////////////////
+    /// Modify name of field to match local
+    thisinc.u_remote_record_id = parsedresponse.result.incident_id;
+    thisinc.u_remote_record_number = parsedresponse.result.incident_number;
+    //thisinc.u_client_inc_last_updated_on = parsedupdatetime;
+    thisinc.update();
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-12 15:33:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;99acc0ea1bf66810cdc7fc86cc4bcb58&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Journal Inc Send&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_99acc0ea1bf66810cdc7fc86cc4bcb58&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 16:15:46&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=99acc0ea1bf66810cdc7fc86cc4bcb58"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1275540377</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>369cc6682fd3201024f0f7ecf699b680</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1788911c48a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration - Journal Inc Send</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f18cc6e491d32010fefea6798fa6bede</update_guid>
+<update_guid_history>f18cc6e491d32010fefea6798fa6bede:-1275540377,0504546e66f66810954ad3bf5ed68a07:-1320895907,89a2dcee4bf6681012839a2730944b43:1458047417,a1acc0ea8ef66810464937044b176d5c:778845618</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_push_integration_entries_u_integration</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_integration" table="u_push_integration_entries"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Integration&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_integration&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;50&lt;/max_length&gt;&lt;name&gt;u_push_integration_entries&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 06:56:50&lt;/sys_created_on&gt;&lt;sys_id&gt;13df29091bfe6410cdc7fc86cc4bcb36&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Integration&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_push_integration_entries_u_integration&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 14:48:32&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1689239690</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>369ccae42fd3201024f0f7ecf699b6cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888c1e9a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Integration</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>5c98b12c36932010a361889840a9e77b</update_guid>
+<update_guid_history>5c98b12c36932010a361889840a9e77b:-1689239690,5200f5c55cfe641084fe21a39752fcfa:-1729637837</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_849bc0e61bf66810cdc7fc86cc4bcb21</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;u_ticket_integration=ATSG^sys_updated_by!=apiuser^commentsVALCHANGES^EQ&lt;item display_value="ATSG" endquery="false" field="u_ticket_integration" goto="false" newquery="false" operator="=" or="false" value="ATSG"/&gt;&lt;item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="false" field="comments" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Inc Comment Trigger&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var targeturl = 'https://atsgdev.service-now.com/';
+    var endpoint = 'atsg/atsg_push_integration/incident/update';
+
+    var extincid = current.u_remote_record_id;
+    var endpointwithquery = endpoint + "?" + "inc_sys_id=" + extincid;
+
+
+    var thisinccomments = current.comments;
+    
+    if (JSUtil.has(thisinccomments) &amp;&amp; JSUtil.notNil(thisinccomments)) {
+        var createentry = new GlideRecord('u_push_integration_entries');
+        createentry.initialize();
+        createentry.u_incident = current.sys_id;
+        createentry.u_call_type = "Journal";
+        createentry.u_integration_type = "Incident";
+        createentry.u_call_method = "POST";
+        createentry.u_sent_or_received = "sent";
+        createentry.u_target_url = targeturl;
+        createentry.u_api_endpoint = endpointwithquery;
+        createentry.u_journal_type = 'comments';
+        createentry.u_journal_value = thisinccomments;
+        createentry.insert();
+
+    }
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-12 15:28:46&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;849bc0e61bf66810cdc7fc86cc4bcb21&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Inc Comment Trigger&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_849bc0e61bf66810cdc7fc86cc4bcb21&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:47:38&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=849bc0e61bf66810cdc7fc86cc4bcb21"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-348195425</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>3a9ccae42fd3201024f0f7ecf699b6ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888f805820000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>incident</table>
+<target_name>Push Integration - Inc Comment Trigger</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>46160664fad32010c72e53950fcf8d6c</update_guid>
+<update_guid_history>46160664fad32010c72e53950fcf8d6c:-348195425,237f89e223ba6810e65b5d48c05694c7:1650845952,357c802ad6f668107f07c4a51d07ba30:1515804764,009b44eaa0f6681077bd6f4eb3995676:1496919196</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_104fccdd1b76a410cdc7fc86cc4bcbe2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_push_integration_entries&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="u_push_integration_entries"&gt;sys_created_by=apiuser^u_call_type=Update^u_sent_or_received=received^EQ&lt;item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="apiuser"/&gt;&lt;item endquery="false" field="u_call_type" goto="false" newquery="false" operator="=" or="false" value="Update"/&gt;&lt;item endquery="false" field="u_sent_or_received" goto="false" newquery="false" operator="=" or="false" value="received"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration State Handling&lt;/name&gt;&lt;order&gt;20&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+
+    var setLocalState = "none";
+    var setCloseNoteCloseCode = "no";
+    var setLocalCloseCode = "none";
+
+    // Map States Remote Integrated States that should trigger Local Change
+    function statemap(remotestate) {
+        if (remotestate == 'Resolved')
+            setLocalState = 'Resolved';
+        setCloseNoteCloseCode = "yes";
+        if (remotestate == 'Canceled')
+            setLocalState = 'Canceled';
+    }
+
+    // Map the Close Codes
+    function close_code_map(remote_close_code) {
+
+        if (remote_close_code == 'Not Solved (Too Costly)')
+            setLocalCloseCode = 'Not Solved (Too Costly)';
+        if (remote_close_code == 'Not Solved (Not Reproducible)')
+            setLocalCloseCode = 'Not Solved (Not Reproducible)';
+        if (remote_close_code == 'Closed/Resolved by Caller')
+            setLocalCloseCode = 'Closed/Resolved by Caller';
+        if (remote_close_code == 'Solved Remotely (Permanently)')
+            setLocalCloseCode = 'Solved Remotely (Permanently)';
+        if (remote_close_code == 'Solved Remotely (Work Around)')
+            setLocalCloseCode = 'Solved Remotely (Work Around)';
+        if (remote_close_code == 'Solved (Work Around)')
+            setLocalCloseCode = 'Solved (Work Around)';
+        if (remote_close_code == 'Solved (Permanently))')
+            setLocalCloseCode = 'Solved (Permanently)';
+
+    }
+
+
+
+    // Parse the Entry
+    var content = current.u_content;
+    var currentsysid = current.sys_id;
+    var contentparsed = JSON.parse(content);
+
+    // Get The Relevant Incident SYSID
+    var incsysid = current.u_incident;
+
+    // Grab the relevant Incident Record
+    var thisinc = new GlideRecord('incident');
+    thisinc.get(incsysid);
+
+    var thisincstate = thisinc.getDisplayValue('state');
+
+    if (thisincstate != 'Resolved' &amp;&amp; thisincstate != 'Canceled' &amp;&amp; thisincstate != 'Closed') {
+
+        var state = contentparsed.state;
+        var remote_hold_reason = contentparsed.hold_reason;
+        var remote_close_code = contentparsed.close_code;
+        var remote_close_notes = contentparsed.close_notes;
+
+
+        statemap(state);
+        if (setLocalState != 'none') {
+            
+            var thechosenstate = new GlideRecord('sys_choice');
+            thechosenstate.addQuery('name', 'incident');
+            thechosenstate.addQuery('element', 'state');
+            thechosenstate.addQuery('label', setLocalState);
+            thechosenstate.query();
+
+            var thisstatevalue = "";
+            if (thechosenstate.next()) {
+                thisstatevalue = thechosenstate.getValue('value');
+            }
+            
+            thisinc.setValue('state', thisstatevalue);
+        }
+        if (setCloseNoteCloseCode == 'yes') {
+            close_code_map(remote_close_code);
+
+            var thechosenclosecode = new GlideRecord('sys_choice');
+            thechosenclosecode.addQuery('name', 'incident');
+            thechosenclosecode.addQuery('element', 'close_code');
+            thechosenclosecode.addQuery('label', setLocalCloseCode);
+            thechosenclosecode.query();
+
+            var thisclosecodevalue = "";
+            if (thechosenclosecode.next()) {
+                thisclosecodevalue = thechosenclosecode.getValue('value');
+            }
+
+            thisinc.close_code.setValue(thisclosecodevalue);
+            thisinc.close_notes = remote_close_notes;
+        }
+        var journalobjvalue = "State:" + state + "\n" + "Hold Reason:" + remote_hold_reason;
+        if (state == "On Hold") {
+            thisinc.comments = journalobjvalue;
+        }
+
+
+        thisinc.update();
+
+
+    }
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 18:32:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;104fccdd1b76a410cdc7fc86cc4bcbe2&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration State Handling&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_104fccdd1b76a410cdc7fc86cc4bcbe2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:56:36&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=104fccdd1b76a410cdc7fc86cc4bcbe2"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1052014867</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>3e9ccae42fd3201024f0f7ecf699b6cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>178890039ff0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration State Handling</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>99284aa465d32010137b1d9cb1bffb8e</update_guid>
+<update_guid_history>99284aa465d32010137b1d9cb1bffb8e:-1052014867,1b8ac5a2e9ba68102f190548548137d3:1338211319,c018246eba3a681080d3d3c54cc7a166:183271902,d44fccdd1576a41023783e30fcb8f2e5:1880362709</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_push_integration_entries_u_attachment_sys_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_attachment_sys_id" table="u_push_integration_entries"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Attachment SYS ID&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_attachment_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_push_integration_entries&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 15:29:18&lt;/sys_created_on&gt;&lt;sys_id&gt;18d1c2a02fd3201024f0f7ecf699b6f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Attachment SYS ID&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_push_integration_entries_u_attachment_sys_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:29:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1990813429</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:05</sys_created_on>
+<sys_id>6e9ccae42fd3201024f0f7ecf699b6cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888e73adc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:05</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Attachment SYS ID</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>91e106a05bd3201038e3a2f057a9b2c8</update_guid>
+<update_guid_history>91e106a05bd3201038e3a2f057a9b2c8:1990813429</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_592863091b36a410cdc7fc86cc4bcbd4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_push_integration_entries&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="u_push_integration_entries"&gt;u_call_type=Attachment^u_sent_or_received=sent^EQ&lt;item endquery="false" field="u_call_type" goto="false" newquery="false" operator="=" or="false" value="Attachment"/&gt;&lt;item endquery="false" field="u_sent_or_received" goto="false" newquery="false" operator="=" or="false" value="sent"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Attachment Inc Send&lt;/name&gt;&lt;order&gt;1500&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //////////////////////////////////
+    //Modify to match environment
+    var basicauthconfigname = 'azia';
+
+    ////////////////////////////////////////////////////	
+    var auth = new GlideRecord('sys_auth_profile_basic');
+    auth.addQuery('name', basicauthconfigname);
+    auth.query();
+
+    var creds = "";
+    if (auth.next()) {
+        creds = auth.sys_id;
+    }
+    //////////////////////////////////////////////////////
+
+
+    var incsysid = current.u_incident;
+    var external_inc_sys_id = current.u_external_inc_sysid;
+	var attachmentsysid = current.u_attachment_sys_id;
+    var thisentrysysid = current.sys_id;
+
+    var targeturl = current.u_target_url;
+    var endpoint = current.u_api_endpoint;
+    var fullurl = targeturl + endpoint + "?inc_sys_id=" + external_inc_sys_id;
+
+
+
+
+    var attachmentquery = new GlideRecord('sys_attachment');
+    attachmentquery.addQuery('table_name', 'incident');
+    attachmentquery.addQuery('sys_id', attachmentsysid);
+    attachmentquery.setLimit(1);
+    attachmentquery.query();
+
+    var thisattachmentsysid = "";
+    var thiscontenttype = "";
+    var thisfilename = "";
+    var downloadattachment = "";
+    var attachmentcontent = "";
+
+
+
+    if (attachmentquery.next()) {
+
+        thisattachmentsysid = attachmentquery.sys_id;
+        thiscontenttype = attachmentquery.content_type.toString();
+        thisfilename = encodeURIComponent(attachmentquery.file_name.toString());
+
+        //gs.log("find the attachment? " + thisfilename)
+
+        var attachmentsendurl = targeturl;
+        attachmentsendurl += "api/now/attachment/file?";
+        attachmentsendurl += "table_name=incident";
+        attachmentsendurl += "&amp;table_sys_id=" + external_inc_sys_id;
+        attachmentsendurl += "&amp;file_name=" + thisfilename;
+
+
+
+        //gs.log("attachmenturl is " + attachmentsendurl)
+
+        var attachmentrequest = new sn_ws.RESTMessageV2();
+        attachmentrequest.setHttpMethod('post');
+        attachmentrequest.setEndpoint(attachmentsendurl);
+        attachmentrequest.setRequestBodyFromAttachment(thisattachmentsysid);
+        attachmentrequest.setAuthenticationProfile('basic', creds);
+        attachmentrequest.setRequestHeader('Content-Type', thiscontenttype);
+
+        var attachmentresponse = attachmentrequest.execute();
+        var attachmenthttpResponseStatus = attachmentresponse.getStatusCode();
+        var attachmentresponsebody = attachmentresponse.getBody();
+        //gs.log("attach status is" + attachmenthttpResponseStatus)
+
+
+        var parsedattachmentresponse = JSON.parse(attachmentresponsebody);
+        var parsedattachsysid = parsedattachmentresponse.result.sys_id;
+
+
+    }
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+
+    if (attachmenthttpResponseStatus == 200 || attachmenthttpResponseStatus == 201) {
+
+        var contentobj = {};
+        contentobj.u_attachment = parsedattachsysid;
+        contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
+        contentobj.u_external_inc_sysid = current.getValue('u_incident');
+        var contentstr = JSON.stringify(contentobj);
+
+        var update_inc_request = new sn_ws.RESTMessageV2();
+        update_inc_request.setHttpMethod('POST');
+        update_inc_request.setEndpoint(fullurl);
+        update_inc_request.setAuthenticationProfile('basic', creds);
+        update_inc_request.setRequestHeader('Content-Type', 'application/json');
+        update_inc_request.setRequestBody(contentstr);
+
+
+        var update_inc_response = update_inc_request.execute();
+        var update_inc_httpResponseStatus = update_inc_response.getStatusCode();
+        var update_inc_responsebody = update_inc_response.getBody();
+
+    }
+    var parsedresponse = JSON.parse(update_inc_responsebody);
+
+
+    var thisentry = new GlideRecord('u_push_integration_entries');
+    thisentry.get(thisentrysysid);
+
+    thisentry.u_responsebody = update_inc_responsebody;
+    thisentry.u_status_code = update_inc_httpResponseStatus;
+    //thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
+    //thisentry.u_external_inc_number = parsedresponse.result.incident_number;
+    thisentry.update();
+
+
+
+
+
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 15:41:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;592863091b36a410cdc7fc86cc4bcbd4&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Attachment Inc Send&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_592863091b36a410cdc7fc86cc4bcbd4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 16:04:13&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=592863091b36a410cdc7fc86cc4bcbd4"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>335860150</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>769ccae42fd3201024f0f7ecf699b6ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>178890730a00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration - Attachment Inc Send</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>28e9cae4ded3201076fcf5a1bfbf44c6</update_guid>
+<update_guid_history>28e9cae4ded3201076fcf5a1bfbf44c6:335860150,79e4c0e601f66810f40bb7d9cc0ec117:-1505761220,a484945166b6a410ffc1dfadeb2be2ec:1338559580,1686ff411e76a410ae15c7f18ad25c9a:-1867692463,182e2f0d3336a41033ddf96af9d27028:1745014809,063823490536a41046549fa8515d32a3:-573344541,512823491c36a4105ab74d6d12640f9d:-774719837</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_push_integration_entries_u_journal_value_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_journal_value" label="Journal Value" language="en" table="u_push_integration_entries"><sys_documentation action="INSERT_OR_UPDATE"><element>u_journal_value</element><help/><hint/><label>Journal Value</label><language>en</language><name>u_push_integration_entries</name><plural>Journal Values</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 14:53:05</sys_created_on><sys_id>ba99f52c2f93201024f0f7ecf699b6fd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Journal Value</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_push_integration_entries_u_journal_value_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 14:53:05</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-784712051</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>7a9ccae42fd3201024f0f7ecf699b6cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888c612ef0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Journal Value</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7e99316c3f9320105433d1f3106c5fb7</update_guid>
+<update_guid_history>7e99316c3f9320105433d1f3106c5fb7:-784712051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_e64606642fd3201024f0f7ecf699b671</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;u_ticket_integration=ATSG^sys_updated_by!=apiuser^work_notesVALCHANGES^EQ&lt;item display_value="ATSG" endquery="false" field="u_ticket_integration" goto="false" newquery="false" operator="=" or="false" value="ATSG"/&gt;&lt;item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="false" field="work_notes" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Inc Work Note Trigger&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var targeturl = 'https://atsgdev.service-now.com/';
+    var endpoint = 'atsg/atsg_push_integration/incident/update';
+
+    var extincid = current.u_remote_record_id;
+    var endpointwithquery = endpoint + "?" + "inc_sys_id=" + extincid;
+
+
+    var thisincworknotes = current.work_notes;
+
+    if (JSUtil.has(thisincworknotes) &amp;&amp; JSUtil.notNil(thisincworknotes)) {
+        var createentry2 = new GlideRecord('u_push_integration_entries');
+        createentry2.initialize();
+        createentry2.u_incident = current.sys_id;
+        createentry2.u_call_type = "Journal";
+        createentry2.u_integration_type = "Incident";
+        createentry2.u_call_method = "POST";
+        createentry2.u_sent_or_received = "sent";
+        createentry2.u_target_url = targeturl;
+        createentry2.u_api_endpoint = endpointwithquery;
+        createentry2.u_journal_type = 'work_notes';
+        createentry2.u_journal_value = thisincworknotes;
+        createentry2.insert();
+    }
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 15:48:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e64606642fd3201024f0f7ecf699b671&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Inc Work Note Trigger&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_e64606642fd3201024f0f7ecf699b671&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:48:31&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e64606642fd3201024f0f7ecf699b671"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-98593943</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>7e9cc6682fd3201024f0f7ecf699b680</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888f8d1d90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>incident</table>
+<target_name>Push Integration - Inc Work Note Trigger</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>7e468664c8d32010a3ad2b0e7d285972</update_guid>
+<update_guid_history>7e468664c8d32010a3ad2b0e7d285972:-98593943</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_push_integration_entries_u_journal_value</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_journal_value" table="u_push_integration_entries"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Journal Value&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_journal_value&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;name&gt;u_push_integration_entries&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 14:53:05&lt;/sys_created_on&gt;&lt;sys_id&gt;7a79fd2c2f93201024f0f7ecf699b659&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Journal Value&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_push_integration_entries_u_journal_value&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 14:53:05&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-284804967</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>7e9ccae42fd3201024f0f7ecf699b6cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888c612d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Journal Value</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>3a99316c20932010aa48a88803a62bb6</update_guid>
+<update_guid_history>3a99316c20932010aa48a88803a62bb6:-284804967</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_3d5e47091bf2a410cdc7fc86cc4bcb98</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;u_ticket_integration=ATSG^sys_updated_by!=apiuser^EQ&lt;item display_value="ATSG" endquery="false" field="u_ticket_integration" goto="false" newquery="false" operator="=" or="false" value="ATSG"/&gt;&lt;item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Inc Update Trigger&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	
+	var targeturl = 'https://atsgdev.service-now.com/';
+	var endpoint = 'atsg/atsg_push_integration/incident/update';
+	
+	var extincid = current.u_remote_record_id;
+	var endpointwithquery = endpoint + "?" + "inc_sys_id=" + extincid;
+	
+	
+    var createentry = new GlideRecord('u_push_integration_entries');
+    createentry.initialize();
+    createentry.u_incident = current.sys_id;
+    createentry.u_call_type = "Update";
+	createentry.u_integration_type = "Incident";
+	createentry.u_call_method = "POST";
+	createentry.u_sent_or_received = "sent";
+	createentry.u_target_url = targeturl;
+	createentry.u_api_endpoint = endpointwithquery;
+	createentry.insert();
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 13:48:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3d5e47091bf2a410cdc7fc86cc4bcb98&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Inc Update Trigger&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_3d5e47091bf2a410cdc7fc86cc4bcb98&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:45:02&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3d5e47091bf2a410cdc7fc86cc4bcb98"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>124610171</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>b29ccae42fd3201024f0f7ecf699b6ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888f5a5da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>incident</table>
+<target_name>Push Integration - Inc Update Trigger</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>44858a24f6d32010b305efaf9297c252</update_guid>
+<update_guid_history>44858a24f6d32010b305efaf9297c252:124610171,a2dbb7457b76a4107756ce00f0b9f471:-1957229763,e1bb3745db76a41022036d6589426ab5:2110528718,3b64970debf2a41026045fa8751381bd:-1386783922,f4ce0f09d9f2a41046e8d577ca920abf:1376270331,f15e470963f2a410ec06ed377c9a979c:-593857021</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_push_integration_entries_u_journal_type_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_journal_type" label="Journal Type" language="en" table="u_push_integration_entries"><sys_documentation action="INSERT_OR_UPDATE"><element>u_journal_type</element><help/><hint/><label>Journal Type</label><language>en</language><name>u_push_integration_entries</name><plural>Journal Types</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 15:28:43</sys_created_on><sys_id>bcc182a02fd3201024f0f7ecf699b65d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Journal Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_push_integration_entries_u_journal_type_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 15:28:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>74312431</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>b69ccae42fd3201024f0f7ecf699b6cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888e6b27e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Journal Type</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b8c182a02ed32010e85d8514c283f165</update_guid>
+<update_guid_history>b8c182a02ed32010e85d8514c283f165:74312431</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_deb0078d1bb2a410cdc7fc86cc4bcb22</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;u_ticket_integrationCHANGESTOATSG^sys_updated_by!=apiuser^EQ&lt;item display_value="ATSG" endquery="false" field="u_ticket_integration" goto="false" newquery="false" operator="CHANGESTO" or="false" value="ATSG"/&gt;&lt;item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Inc Create Trigger&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	
+	var targeturl = 'https://atsgdev.service-now.com/';
+	var endpoint = 'atsg/atsg_push_integration/incident/create';
+	
+    var createentry = new GlideRecord('u_push_integration_entries');
+    createentry.initialize();
+    createentry.u_incident = current.sys_id;
+    createentry.u_call_type = "Create";
+	createentry.u_integration_type = "Incident";
+	createentry.u_call_method = "POST";
+	createentry.u_sent_or_received = "sent";
+	createentry.u_target_url = targeturl;
+	createentry.u_api_endpoint = endpoint;
+	createentry.insert();
+
+
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 12:51:28&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;deb0078d1bb2a410cdc7fc86cc4bcb22&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Inc Create Trigger&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_deb0078d1bb2a410cdc7fc86cc4bcb22&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:43:17&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=deb0078d1bb2a410cdc7fc86cc4bcb22"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1329925435</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>ba9cc6682fd3201024f0f7ecf699b680</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888f4079f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>incident</table>
+<target_name>Push Integration - Inc Create Trigger</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>0a154a24ffd32010ddbe119c2e129c87</update_guid>
+<update_guid_history>0a154a24ffd32010ddbe119c2e129c87:-1329925435,12ef7fc5db76a41099f0111d7d36b5e9:-458169518,144e870973f2a410b9eb3ea2b30b798b:1790196643,123e8309d8f2a4108e6111dfdfb59876:-274873142,d9cd8b85f6f2a4106188f77608c2b4e5:-1964142902,0bec8b850bf2a4103f3fcbb4783ddd38:1817508847,ae324b0199f2a4102cc297d37847f4d9:-443022578,d2d14f8d0db2a4107b7b40dacbd03db6:-688897273,34310fcda9b2a4100d2ab22d6cf689fc:1201270283</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_push_integration_entries_u_journal_type</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_journal_type" table="u_push_integration_entries"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Journal Type&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_journal_type&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;15&lt;/max_length&gt;&lt;name&gt;u_push_integration_entries&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 15:28:43&lt;/sys_created_on&gt;&lt;sys_id&gt;c4a102a02fd3201024f0f7ecf699b6ee&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Journal Type&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_push_integration_entries_u_journal_type&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:28:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1399345913</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>ba9ccae42fd3201024f0f7ecf699b6cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888e6b2630000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Journal Type</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>74c182a03cd32010a47783c8b8761264</update_guid>
+<update_guid_history>74c182a03cd32010a47783c8b8761264:-1399345913</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_push_integration_entries_u_journal_sys_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_journal_sys_id" label="Journal SYS ID" language="en" table="u_push_integration_entries"><sys_documentation action="INSERT_OR_UPDATE"><element>u_journal_sys_id</element><help/><hint/><label>Journal SYS ID</label><language>en</language><name>u_push_integration_entries</name><plural>Journal SYS IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-31 14:51:22</sys_created_on><sys_id>b939f92c2f93201024f0f7ecf699b688</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Journal SYS ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_push_integration_entries_u_journal_sys_id_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-31 14:51:22</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>651477765</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>f29ccae42fd3201024f0f7ecf699b6cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888c483ae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Journal SYS ID</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>f139f92c859320100b4b3664b37e499f</update_guid>
+<update_guid_history>f139f92c859320100b4b3664b37e499f:651477765</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_bb5f4f091bf2a410cdc7fc86cc4bcb06</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sys_attachment&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="sys_attachment"&gt;sys_created_by!=apiuser^EQ&lt;item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Inc Attach Trigger&lt;/name&gt;&lt;order&gt;1500&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+
+    var targeturl = 'https://atsgdev.service-now.com/';
+    var endpoint = 'atsg/atsg_push_integration/incident/attachment';
+
+   
+    var thisincsysid = current.table_sys_id;
+    var thisattachment = current.sys_id;
+    var thisinc = new GlideRecord('incident');
+    thisinc.get(thisincsysid);
+    var integrationvalue = thisinc.getDisplayValue('u_remote_integration');
+    var externalid = thisinc.u_remote_record_id;
+    var externalnumber = thisinc.u_remote_record_number;
+	
+	
+	
+	
+    if (integrationvalue == 'ATSG ServiceNow') {
+
+        
+        var checkforattachment = new GlideRecord('u_push_integration_entries');
+        checkforattachment.addQuery('u_status_code', 200);
+        checkforattachment.addQuery('u_attachment', thisattachment);
+        checkforattachment.query();
+
+        if (checkforattachment.getRowCount() == 0) {
+
+            
+            var createentry = new GlideRecord('u_push_integration_entries');
+            createentry.initialize();
+            createentry.u_incident = thisincsysid;
+            createentry.u_call_type = "Attachment";
+            createentry.u_integration_type = "Incident";
+            createentry.u_call_method = "POST";
+            createentry.u_sent_or_received = "sent";
+            createentry.u_target_url = targeturl;
+            createentry.u_api_endpoint = endpoint;
+            createentry.u_attachment = thisattachment;
+			createentry.u_attachment_sys_id = thisattachment;
+			createentry.u_external_inc_sysid = externalid;
+			createentry.u_external_inc_number = externalnumber;
+            createentry.insert();
+
+
+        }
+
+
+    }
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 13:53:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bb5f4f091bf2a410cdc7fc86cc4bcb06&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Inc Attach Trigger&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_bb5f4f091bf2a410cdc7fc86cc4bcb06&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:52:20&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bb5f4f091bf2a410cdc7fc86cc4bcb06"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1667952111</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>f69cc6682fd3201024f0f7ecf699b680</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888fc50600000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>sys_attachment</table>
+<target_name>Push Integration - Inc Attach Trigger</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>ee27ce64b9d32010d496f1bd31f49140</update_guid>
+<update_guid_history>ee27ce64b9d32010d496f1bd31f49140:-1667952111,ec8bb3454a76a410ef44be2649a7256b:-1760282430,b394d70d40f2a4104ea16b46bec25196:1984383720,00e297c962f2a4108c81a978c0b23615:1975862953,406f4f09f7f2a410d1074fc18ccab80a:1731802301</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_push_integration_entries_u_journal_sys_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_journal_sys_id" table="u_push_integration_entries"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Journal SYS ID&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_journal_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_push_integration_entries&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 14:51:22&lt;/sys_created_on&gt;&lt;sys_id&gt;c219352c2f93201024f0f7ecf699b6d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Journal SYS ID&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_push_integration_entries_u_journal_sys_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 14:51:22&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2117135169</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>f69ccae42fd3201024f0f7ecf699b6cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17888c4836a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration Entries.Journal SYS ID</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>b939f92cae93201012c6ac3a05fb7c9d</update_guid>
+<update_guid_history>b939f92cae93201012c6ac3a05fb7c9d:-2117135169</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_87331f091bf2a410cdc7fc86cc4bcbc4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_push_integration_entries&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="u_push_integration_entries"&gt;u_call_type=Create^u_sent_or_received=sent^sys_created_by!=apiuser^EQ&lt;item endquery="false" field="u_call_type" goto="false" newquery="false" operator="=" or="false" value="Create"/&gt;&lt;item endquery="false" field="u_sent_or_received" goto="false" newquery="false" operator="=" or="false" value="sent"/&gt;&lt;item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Create Inc Send&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //////////////////////////////////
+    //Modify to match environment
+    var basicauthconfigname = 'azia';
+
+    ////////////////////////////////////////////////////	
+    var auth = new GlideRecord('sys_auth_profile_basic');
+    auth.addQuery('name', basicauthconfigname);
+    auth.query();
+
+    var creds = "";
+    if (auth.next()) {
+        creds = auth.sys_id;
+    }
+    //////////////////////////////////////////////////////
+
+    var targeturl = current.u_target_url;
+    var endpoint = current.u_api_endpoint;
+    var fullurl = targeturl + endpoint;
+    var incsysid = current.u_incident;
+    var thisentrysysid = current.sys_id;
+
+    var thisinc = new GlideRecord('incident');
+    thisinc.get(incsysid);
+
+
+
+    // Create Empty Object to populate later
+    var contentobj = {};
+
+    // Set variables to Capture
+    var description = thisinc.getValue('description');
+    var short_description = thisinc.getValue('short_description');
+    var impact = thisinc.getDisplayValue('impact');
+    var urgency = thisinc.getDisplayValue('urgency');
+    var category = thisinc.getDisplayValue('category');
+    var subcategory = thisinc.getDisplayValue('subcategory');
+    var caller = thisinc.getDisplayValue('caller_id');
+	var remote_assignment_group = thisinc.getDisplayValue('u_remote_assignment_group');
+
+    //Set Critical Values
+	contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
+    contentobj.u_external_inc_sysid = current.getValue('u_incident');
+    contentobj.description = description;
+    contentobj.short_description = short_description;
+
+    // Optional on creation
+    contentobj.caller = caller;
+    contentobj.impact = impact;
+    contentobj.urgency = urgency;
+    contentobj.subcategory = subcategory;
+    contentobj.category = category;
+	contentobj.u_remote_assignment_group = remote_assignment_group;
+
+
+    //// Convert Content Object to JSON String
+    var contentstr = JSON.stringify(contentobj);
+    current.u_content = contentstr;
+    current.update();
+
+	
+	
+	
+	
+	
+	///////////////////////////////////////////////////////////////////////////////
+    var create_inc_request = new sn_ws.RESTMessageV2();
+    create_inc_request.setHttpMethod('POST');
+    create_inc_request.setEndpoint(fullurl);
+    create_inc_request.setAuthenticationProfile('basic', creds);
+    create_inc_request.setRequestHeader('Content-Type', 'application/json');
+    create_inc_request.setRequestBody(contentstr);
+
+
+    var create_inc_response = create_inc_request.execute();
+    var create_inc_httpResponseStatus = create_inc_response.getStatusCode();
+    var create_inc_responsebody = create_inc_response.getBody();
+	
+	var parsedresponse = JSON.parse(create_inc_responsebody);
+
+	var thisentry = new GlideRecord('u_push_integration_entries');
+	thisentry.get(thisentrysysid);
+	
+	thisentry.u_responsebody = create_inc_responsebody;
+	thisentry.u_status_code = create_inc_httpResponseStatus;
+	thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
+	thisentry.u_external_inc_number = parsedresponse.result.incident_number;
+	thisentry.update();
+	
+	/////////////////////////////////////////////////////
+	///////////////////////////////////////////////////
+	//////////////////////////
+	/// Modify name of field to match local
+	thisinc.u_remote_record_id = parsedresponse.result.incident_id;
+	thisinc.u_remote_record_number = parsedresponse.result.incident_number;
+	thisinc.update();
+
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 14:10:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;87331f091bf2a410cdc7fc86cc4bcbc4&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Create Inc Send&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_87331f091bf2a410cdc7fc86cc4bcbc4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 15:58:20&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=87331f091bf2a410cdc7fc86cc4bcbc4"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1149822792</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>fa9ccae42fd3201024f0f7ecf699b6ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1788901cf3f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration - Create Inc Send</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>ee884aa4ced320105d53c38813bfd395</update_guid>
+<update_guid_history>ee884aa4ced320105d53c38813bfd395:-1149822792,333ac0e67af668103179db563a1b0377:515338206,b3f480e674f66810bf9c37acae0a1f4f:321743453,d0214c19c876a41009694b840554221b:1478556221,ee9a3b050376a4101650591fcbdee902:-1519420562,471a13010936a410bc8948edfb74b813:913569363,3db9dbcd4ff2a410f3465a0c2ea31fdb:-250772813,5744570d63f2a4107c0ea5a6a0b00424:-1416012862,c5735bc955f2a410262cfa1e2f7f36a5:379360217,fa53dbc9f3f2a410188ce85035c58853:-605539994</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_1c7a570d1bf2a410cdc7fc86cc4bcb9b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_push_integration_entries&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="u_push_integration_entries"&gt;u_call_type=Update^u_sent_or_received=sent^sys_created_by!=apiuser^EQ&lt;item endquery="false" field="u_call_type" goto="false" newquery="false" operator="=" or="false" value="Update"/&gt;&lt;item endquery="false" field="u_sent_or_received" goto="false" newquery="false" operator="=" or="false" value="sent"/&gt;&lt;item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="apiuser"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Push Integration - Update Inc Send&lt;/name&gt;&lt;order&gt;5000&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //////////////////////////////////
+    //Modify to match environment
+    var basicauthconfigname = 'azia';
+
+////////////////////////////////////////////////////	
+    var auth = new GlideRecord('sys_auth_profile_basic');
+    auth.addQuery('name', basicauthconfigname);
+    auth.query();
+
+    var creds = "";
+    if (auth.next()) {
+        creds = auth.sys_id;
+    }
+    //////////////////////////////////////////////////////
+
+
+    var incsysid = current.u_incident;
+    var external_inc_sys_id = current.u_external_inc_sysid;
+    var thisentrysysid = current.sys_id;
+
+    var targeturl = current.u_target_url;
+    var endpoint = current.u_api_endpoint;
+    var fullurl = targeturl + endpoint + "?inc_sys_id=" + external_inc_sys_id;
+
+    /////////////////////////////////////
+
+	
+   var thisinc = new GlideRecord('incident');
+    thisinc.get(incsysid);
+
+
+
+    // Create Empty Object to populate later
+    var contentobj = {};
+
+
+    // Set variables to Capture
+    var description = thisinc.getValue('description');
+    var short_description = thisinc.getValue('short_description');
+    var impact = thisinc.getDisplayValue('impact');
+    var urgency = thisinc.getDisplayValue('urgency');
+    var category = thisinc.getDisplayValue('category');
+    var subcategory = thisinc.getDisplayValue('subcategory');
+    var caller = thisinc.getDisplayValue('caller_id');
+	var state = thisinc.state.getDisplayValue();
+	var closecode = thisinc.getDisplayValue('close_code');
+	var closenotes = thisinc.getValue('close_notes');
+	var holdreason = thisinc.getDisplayValue('hold_reason');
+	var remote_assignment_group = thisinc.getDisplayValue('u_remote_assignment_group');
+
+
+    //Set Critical Values
+    contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
+    contentobj.u_external_inc_sysid = current.getValue('u_incident');
+    contentobj.description = description;
+    contentobj.short_description = short_description;
+
+    // Optional on creation
+    contentobj.caller = caller;
+    contentobj.impact = impact;
+    contentobj.urgency = urgency;
+    contentobj.subcategory = subcategory;
+    contentobj.category = category;
+	contentobj.u_remote_assignment_group = remote_assignment_group;
+
+    // State Information
+    contentobj.state = state;
+    contentobj.close_code = closecode;
+    contentobj.close_notes = closenotes;
+	contentobj.hold_reason = holdreason;
+
+
+
+
+    //// Convert Content Object to JSON String
+    var contentstr = JSON.stringify(contentobj);
+   
+    current.u_content = contentstr;
+    current.update();
+
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    var update_inc_request = new sn_ws.RESTMessageV2();
+    update_inc_request.setHttpMethod('POST');
+    update_inc_request.setEndpoint(fullurl);
+    update_inc_request.setAuthenticationProfile('basic', creds);
+    update_inc_request.setRequestHeader('Content-Type', 'application/json');
+    update_inc_request.setRequestBody(contentstr);
+
+
+    var update_inc_response = update_inc_request.execute();
+    var update_inc_httpResponseStatus = update_inc_response.getStatusCode();
+    var update_inc_responsebody = update_inc_response.getBody();
+
+    var parsedresponse = JSON.parse(update_inc_responsebody);
+    parsedupdatetime = new GlideDateTime(parsedresponse.result.incident_last_updated_on);
+
+    var thisentry = new GlideRecord('u_push_integration_entries');
+    thisentry.get(thisentrysysid);
+
+    thisentry.u_responsebody = update_inc_responsebody;
+    thisentry.u_status_code = update_inc_httpResponseStatus;
+    thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
+    thisentry.u_external_inc_number = parsedresponse.result.incident_number;
+    thisentry.update();
+
+
+
+
+    /////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////
+    //////////////////////////
+    /// Modify name of field to match local
+    thisinc.u_remote_record_id = parsedresponse.result.incident_id;
+    thisinc.u_remote_record_number = parsedresponse.result.incident_number;
+    //thisinc.u_client_inc_last_updated_on = parsedupdatetime;
+    thisinc.update();
+
+
+
+
+
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;azia&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-08 14:41:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1c7a570d1bf2a410cdc7fc86cc4bcb9b&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Push Integration - Update Inc Send&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_1c7a570d1bf2a410cdc7fc86cc4bcb9b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 16:02:23&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1c7a570d1bf2a410cdc7fc86cc4bcb9b"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1100864131</payload_hash>
+<remote_update_set display_value="Push Integration Base 2">2a9ccae42fd3201024f0f7ecf699b6cb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2021-03-31 16:16:06</sys_created_on>
+<sys_id>fe9ccae42fd3201024f0f7ecf699b6cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>178890584b30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2021-03-31 16:16:06</sys_updated_on>
+<table>u_push_integration_entries</table>
+<target_name>Push Integration - Update Inc Send</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f17982e495d320107d406a9028784aff</update_guid>
+<update_guid_history>f17982e495d320107d406a9028784aff:1100864131,ddba49a271ba6810e3de58c33a9a2fb1:1348358829,a47f9ce6603a6810a2c9a3668748149d:-8603667,c8d440e668f66810624d90c282603ecc:-1447609300,3645185521b6a4101373ee357c7fa10c:-767833076,6235d455bcb6a4100588ced9cd8c1628:-96900409,703d841176b6a4102003c239c2c6482d:1476617678,e6240c99d276a41059a13fea5bd7d74a:847608111,fd0180199376a4103ecd6ca73744e0a5:-1360888871,0f1e2f0d8336a410f280cd20e540eb14:1057828810,b815eb81d636a410d2662ded51f1e195:-292844945,1c7ad3013136a41014b78d72c3b552c2:1755839051</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
