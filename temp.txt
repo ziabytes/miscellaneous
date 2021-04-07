@@ -1,0 +1,97 @@
+ ////////////////////////////////////////////////////	
+    var auth = new GlideRecord('sys_auth_profile_basic');
+    auth.addQuery('name', basicauthconfigname);
+    auth.query();
+
+    var creds = "";
+    if (auth.next()) {
+        creds = auth.sys_id;
+    }
+    //////////////////////////////////////////////////////
+
+    var targeturl = current.u_target_url;
+    var endpoint = current.u_api_endpoint;
+    var fullurl = targeturl + endpoint;
+    var incsysid = current.u_incident;
+    var thisentrysysid = current.sys_id;
+
+    var thisinc = new GlideRecord('incident');
+    thisinc.get(incsysid);
+
+
+
+    // Create Empty Object to populate later
+    var contentobj = {};
+
+    // Set variables to Capture
+    //var description = thisinc.description;
+    //var short_description = thisinc.short_description;
+	
+	var description = thisinc.getValue('description'); 
+	var short_description = thisinc.getValue('short_description'); 
+	var impact = thisinc.getDisplayValue('impact'); 
+	var urgency = thisinc.getDisplayValue('urgency'); 
+	var category = thisinc.getDisplayValue('category'); 
+	var subcategory = thisinc.getDisplayValue('subcategory'); 
+	var caller = thisinc.getDisplayValue('caller_id');
+	var assignmentgrp = thisinc.getDisplayValue('assignment_group');
+	var assignmentto = thisinc.getDisplayValue('assignment_to');
+
+    //Set Critical Values
+	contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
+    contentobj.u_external_inc_sysid = current.getValue('u_incident');
+    contentobj.description = description;
+    contentobj.short_description = short_description;
+
+    // Optional on creation
+    contentobj.caller = caller + '';
+    contentobj.impact = impact + '';
+    contentobj.urgency = urgency + '';
+    contentobj.subcategory = subcategory + '';
+    contentobj.category = category + '';
+	contentobj.assignment_group = assignmentgrp + '';
+	contentobj.assignment_to = assignmentto + '';
+
+    //// Convert Content Object to JSON String
+    var contentstr = JSON.stringify(contentobj);
+    current.u_content = contentstr;
+    current.update();
+
+	
+	
+	
+	
+	
+	///////////////////////////////////////////////////////////////////////////////
+    var create_inc_request = new sn_ws.RESTMessageV2();
+    create_inc_request.setHttpMethod('POST');
+    create_inc_request.setEndpoint(fullurl);
+    create_inc_request.setAuthenticationProfile('basic', creds);
+    create_inc_request.setRequestHeader('Content-Type', 'application/json');
+    create_inc_request.setRequestBody(contentstr);
+
+
+    var create_inc_response = create_inc_request.execute();
+    var create_inc_httpResponseStatus = create_inc_response.getStatusCode();
+    var create_inc_responsebody = create_inc_response.getBody();
+	
+	var parsedresponse = JSON.parse(create_inc_responsebody);
+
+	var thisentry = new GlideRecord('u_push_integration_entries');
+	thisentry.get(thisentrysysid);
+	
+	thisentry.u_responsebody = create_inc_responsebody;
+	thisentry.u_status_code = create_inc_httpResponseStatus;
+	thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
+	thisentry.u_external_inc_number = parsedresponse.result.incident_number;
+	thisentry.update();
+	
+	/////////////////////////////////////////////////////
+	///////////////////////////////////////////////////
+	//////////////////////////
+	/// Modify name of field to match local
+	thisinc.u_external_incident_sysid = parsedresponse.result.incident_id;
+	thisinc.u_external_incident_number = parsedresponse.result.incident_number;
+	thisinc.update();
+
+
