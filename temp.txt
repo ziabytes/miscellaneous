@@ -1,5 +1,5 @@
- ////////////////////////////////////////////////////	
-    var auth = new GlideRecord('sys_auth_profile_basic');
+////////////////////////////////////////////////////	
+	var auth = new GlideRecord('sys_auth_profile_basic');
     auth.addQuery('name', basicauthconfigname);
     auth.query();
 
@@ -9,11 +9,16 @@
     }
     //////////////////////////////////////////////////////
 
-    var targeturl = current.u_target_url;
-    var endpoint = current.u_api_endpoint;
-    var fullurl = targeturl + endpoint;
+
     var incsysid = current.u_incident;
+	var external_inc_sys_id = current.u_external_inc_sysid;
     var thisentrysysid = current.sys_id;
+	
+	var targeturl = current.u_target_url;
+    var endpoint = current.u_api_endpoint;
+    var fullurl = targeturl + endpoint + "?inc_sys_id=" + external_inc_sys_id;
+	
+	
 
     var thisinc = new GlideRecord('incident');
     thisinc.get(incsysid);
@@ -24,9 +29,6 @@
     var contentobj = {};
 
     // Set variables to Capture
-    //var description = thisinc.description;
-    //var short_description = thisinc.short_description;
-	
 	var description = thisinc.getValue('description'); 
 	var short_description = thisinc.getValue('short_description'); 
 	var impact = thisinc.getDisplayValue('impact'); 
@@ -35,7 +37,12 @@
 	var subcategory = thisinc.getDisplayValue('subcategory'); 
 	var caller = thisinc.getDisplayValue('caller_id');
 	var assignmentgrp = thisinc.getDisplayValue('assignment_group');
-	var assignmentto = thisinc.getDisplayValue('assignment_to');
+	var assigned_to = thisinc.getDisplayValue('assigned_to');
+	
+	var state = thisinc.getDisplayValue('state');
+	var closecode = thisinc.getDisplayValue('close_code');
+	var closenotes = thisinc.getValue('close_notes');
+	var holdreason = thisinc.getDisplayValue('hold_reason');
 
     //Set Critical Values
 	contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
@@ -44,14 +51,22 @@
     contentobj.short_description = short_description;
 
     // Optional on creation
-    contentobj.caller = caller + '';
-    contentobj.impact = impact + '';
-    contentobj.urgency = urgency + '';
-    contentobj.subcategory = subcategory + '';
-    contentobj.category = category + '';
+    contentobj.caller = caller;
+    contentobj.impact = impact;
+    contentobj.urgency = urgency;
+    contentobj.subcategory = subcategory;
+    contentobj.category = category;
 	contentobj.assignment_group = assignmentgrp + '';
-	contentobj.assignment_to = assignmentto + '';
+	contentobj.assigned_to = assigned_to + '';
+		
+	// State Information
+	contentobj.state = state;
+	contentobj.close_code = closecode;
+	contentobj.close_notes = closenotes;
+	contentobj.hold_reason = holdreason;
+	
 
+	
     //// Convert Content Object to JSON String
     var contentstr = JSON.stringify(contentobj);
     current.u_content = contentstr;
@@ -62,29 +77,34 @@
 	
 	
 	
-	///////////////////////////////////////////////////////////////////////////////
-    var create_inc_request = new sn_ws.RESTMessageV2();
-    create_inc_request.setHttpMethod('POST');
-    create_inc_request.setEndpoint(fullurl);
-    create_inc_request.setAuthenticationProfile('basic', creds);
-    create_inc_request.setRequestHeader('Content-Type', 'application/json');
-    create_inc_request.setRequestBody(contentstr);
-
-
-    var create_inc_response = create_inc_request.execute();
-    var create_inc_httpResponseStatus = create_inc_response.getStatusCode();
-    var create_inc_responsebody = create_inc_response.getBody();
 	
-	var parsedresponse = JSON.parse(create_inc_responsebody);
+	///////////////////////////////////////////////////////////////////////////////
+    var update_inc_request = new sn_ws.RESTMessageV2();
+    update_inc_request.setHttpMethod('POST');
+    update_inc_request.setEndpoint(fullurl);
+    update_inc_request.setAuthenticationProfile('basic', creds);
+    update_inc_request.setRequestHeader('Content-Type', 'application/json');
+    update_inc_request.setRequestBody(contentstr);
 
+
+    var update_inc_response = update_inc_request.execute();
+    var update_inc_httpResponseStatus = update_inc_response.getStatusCode();
+    var update_inc_responsebody = update_inc_response.getBody();
+	
+	var parsedresponse = JSON.parse(update_inc_responsebody);
+	parsedupdatetime = new GlideDateTime(parsedresponse.result.incident_last_updated_on);
+	
 	var thisentry = new GlideRecord('u_push_integration_entries');
 	thisentry.get(thisentrysysid);
 	
-	thisentry.u_responsebody = create_inc_responsebody;
-	thisentry.u_status_code = create_inc_httpResponseStatus;
+	thisentry.u_responsebody = update_inc_responsebody;
+	thisentry.u_status_code = update_inc_httpResponseStatus;
 	thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
 	thisentry.u_external_inc_number = parsedresponse.result.incident_number;
 	thisentry.update();
+	
+	
+	
 	
 	/////////////////////////////////////////////////////
 	///////////////////////////////////////////////////
@@ -92,6 +112,6 @@
 	/// Modify name of field to match local
 	thisinc.u_external_incident_sysid = parsedresponse.result.incident_id;
 	thisinc.u_external_incident_number = parsedresponse.result.incident_number;
+	thisinc.u_external_incident_updated_on = parsedupdatetime;
 	thisinc.update();
-
 
