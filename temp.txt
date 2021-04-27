@@ -1,117 +1,68 @@
-////////////////////////////////////////////////////	
-	var auth = new GlideRecord('sys_auth_profile_basic');
-    auth.addQuery('name', basicauthconfigname);
-    auth.query();
+(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
-    var creds = "";
-    if (auth.next()) {
-        creds = auth.sys_id;
-    }
-    //////////////////////////////////////////////////////
+    var inc_sys_id = request.queryParams['inc_sys_id'];
+    if (JSUtil.has((inc_sys_id) && inc_sys_id.toString().length > 7)) {
 
+        // Capture and JSONify the request body data
+        var contentBody = request.body.data;
+        var local_attachment_sysid = request.body.data.attachment_sysid;
+        var contentstr = JSON.stringify(contentBody);
+        // Set an empty responseBody object for populating later
+        var responseBody = {};
 
-    var incsysid = current.u_incident;
-	var external_inc_sys_id = current.u_external_inc_sysid;
-    var thisentrysysid = current.sys_id;
-	
-	var targeturl = current.u_target_url;
-    var endpoint = current.u_api_endpoint;
-    var fullurl = targeturl + endpoint + "?inc_sys_id=" + external_inc_sys_id;
-	
-	
+        // Create Integration Entry record, and set the Content field as the JSONified Body 
+        var createint = new GlideRecord('u_push_integration_entries');
+        createint.initialize();
+        createint.u_content = contentstr;
+        createint.u_call_method = 'POST';
+        createint.u_call_type = 'Attachment';
+        createint.u_sent_or_received = 'received';
+        createint.u_integration_type = 'incident';
+        createint.u_content = contentstr;
+        //createint.u_incident.setValue(inc_sys_id.toString());
+        createint.u_external_inc_number = contentBody.u_external_inc_number;
+        createint.u_external_inc_sysid = contentBody.u_external_inc_sysid;
 
-    var thisinc = new GlideRecord('incident');
-    thisinc.get(incsysid);
+        /// Insert the record, and capture the sysid
+        createint.insert();
+        createintsysid = createint.sys_id;
 
+		var thisincsysid = inc_sys_id.toString();
 
-
-    // Create Empty Object to populate later
-    var contentobj = {};
-
-    // Set variables to Capture
-	var description = thisinc.getValue('description'); 
-	var short_description = thisinc.getValue('short_description'); 
-	var impact = thisinc.getDisplayValue('impact'); 
-	var urgency = thisinc.getDisplayValue('urgency'); 
-	var category = thisinc.getDisplayValue('category'); 
-	var subcategory = thisinc.getDisplayValue('subcategory'); 
-	var caller = thisinc.getDisplayValue('caller_id');
-	var assignmentgrp = thisinc.getDisplayValue('assignment_group');
-	var assigned_to = thisinc.getDisplayValue('assigned_to');
-	
-	var state = thisinc.getDisplayValue('state');
-	var closecode = thisinc.getDisplayValue('close_code');
-	var closenotes = thisinc.getValue('close_notes');
-	var holdreason = thisinc.getDisplayValue('hold_reason');
-
-    //Set Critical Values
-	contentobj.u_external_inc_number = current.getDisplayValue('u_incident');
-    contentobj.u_external_inc_sysid = current.getValue('u_incident');
-    contentobj.description = description;
-    contentobj.short_description = short_description;
-
-    // Optional on creation
-    contentobj.caller = caller;
-    contentobj.impact = impact;
-    contentobj.urgency = urgency;
-    contentobj.subcategory = subcategory;
-    contentobj.category = category;
-	contentobj.assignment_group = assignmentgrp + '';
-	contentobj.assigned_to = assigned_to + '';
+        // Grab the incident latest update data
+        var getinc = new GlideRecord('incident');
+        getinc.get(thisincsysid);
+        var inc_last_updatedon = getinc.sys_updated_on;
+        var thisincnumber = getinc.getDisplayValue('number');
 		
-	// State Information
-	contentobj.state = state;
-	contentobj.close_code = closecode;
-	contentobj.close_notes = closenotes;
-	contentobj.hold_reason = holdreason;
-	
+		var getint = new GlideRecord('u_push_integration_entries');
+        getint.get(createintsysid);
+		getint.u_incident.setDisplayValue(thisincnumber); 
+		getint.update();
 
-	
-    //// Convert Content Object to JSON String
-    var contentstr = JSON.stringify(contentobj);
-    current.u_content = contentstr;
-    current.update();
-
-	
-	
-	
-	
-	
-	
-	///////////////////////////////////////////////////////////////////////////////
-    var update_inc_request = new sn_ws.RESTMessageV2();
-    update_inc_request.setHttpMethod('POST');
-    update_inc_request.setEndpoint(fullurl);
-    update_inc_request.setAuthenticationProfile('basic', creds);
-    update_inc_request.setRequestHeader('Content-Type', 'application/json');
-    update_inc_request.setRequestBody(contentstr);
+		
+        // Set Response Body values into object
+        responseBody.incident_id = thisincsysid;
+        responseBody.incident_number = thisincnumber;
+        responseBody.push_integration_entry_id = createintsysid;
 
 
-    var update_inc_response = update_inc_request.execute();
-    var update_inc_httpResponseStatus = update_inc_response.getStatusCode();
-    var update_inc_responsebody = update_inc_response.getBody();
-	
-	var parsedresponse = JSON.parse(update_inc_responsebody);
-	parsedupdatetime = new GlideDateTime(parsedresponse.result.incident_last_updated_on);
-	
-	var thisentry = new GlideRecord('u_push_integration_entries');
-	thisentry.get(thisentrysysid);
-	
-	thisentry.u_responsebody = update_inc_responsebody;
-	thisentry.u_status_code = update_inc_httpResponseStatus;
-	thisentry.u_external_inc_sysid = parsedresponse.result.incident_id;
-	thisentry.u_external_inc_number = parsedresponse.result.incident_number;
-	thisentry.update();
-	
-	
-	
-	
-	/////////////////////////////////////////////////////
-	///////////////////////////////////////////////////
-	//////////////////////////
-	/// Modify name of field to match local
-	thisinc.u_external_incident_sysid = parsedresponse.result.incident_id;
-	thisinc.u_external_incident_number = parsedresponse.result.incident_number;
-	thisinc.u_external_incident_updated_on = parsedupdatetime;
-	thisinc.update();
+        /// Set Successful Response Status and Body
+        response.setStatus(200);
+        response.setBody(responseBody);
 
+
+    } else {
+
+        var unauthorized = new sn_ws_err.ServiceError();
+        unauthorized.setStatus(401);
+        unauthorized.setMessage('INC SYS_ID QUERY PARAMETER MISSING OR INVALID');
+
+        response.setError(unauthorized);
+
+    }
+
+
+
+
+})(request, response);
