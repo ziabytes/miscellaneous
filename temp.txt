@@ -1,68 +1,18 @@
-(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-
-    var inc_sys_id = request.queryParams['inc_sys_id'];
-    if (JSUtil.has((inc_sys_id) && inc_sys_id.toString().length > 7)) {
-
-        // Capture and JSONify the request body data
-        var contentBody = request.body.data;
-        var local_attachment_sysid = request.body.data.attachment_sysid;
-        var contentstr = JSON.stringify(contentBody);
-        // Set an empty responseBody object for populating later
-        var responseBody = {};
-
-        // Create Integration Entry record, and set the Content field as the JSONified Body 
-        var createint = new GlideRecord('u_push_integration_entries');
-        createint.initialize();
-        createint.u_content = contentstr;
-        createint.u_call_method = 'POST';
-        createint.u_call_type = 'Attachment';
-        createint.u_sent_or_received = 'received';
-        createint.u_integration_type = 'incident';
-        createint.u_content = contentstr;
-        //createint.u_incident.setValue(inc_sys_id.toString());
-        createint.u_external_inc_number = contentBody.u_external_inc_number;
-        createint.u_external_inc_sysid = contentBody.u_external_inc_sysid;
-
-        /// Insert the record, and capture the sysid
-        createint.insert();
-        createintsysid = createint.sys_id;
-
-		var thisincsysid = inc_sys_id.toString();
-
-        // Grab the incident latest update data
-        var getinc = new GlideRecord('incident');
-        getinc.get(thisincsysid);
-        var inc_last_updatedon = getinc.sys_updated_on;
-        var thisincnumber = getinc.getDisplayValue('number');
-		
-		var getint = new GlideRecord('u_push_integration_entries');
-        getint.get(createintsysid);
-		getint.u_incident.setDisplayValue(thisincnumber); 
-		getint.update();
-
-		
-        // Set Response Body values into object
-        responseBody.incident_id = thisincsysid;
-        responseBody.incident_number = thisincnumber;
-        responseBody.push_integration_entry_id = createintsysid;
+var restMessage = new sn_ws.RESTMessageV2();
+restMessage.setEndpoint('https://amerendev.service-now.com/oauth_token.do');
+restMessage.setHttpMethod('post');
+restMessage.setRequestHeader('content-type','application/x-www-form-urlencoded');
+restMessage.setRequestHeader('accept','application/json');
+restMessage.setRequestBody('grant_type=password&client_id=b77979ad6bbfa0502e19577be5f484c2&client_secret=WaaaghDakka2!&username=ameren_integration&password=edfugbw99we!!sgw');
 
 
-        /// Set Successful Response Status and Body
-        response.setStatus(200);
-        response.setBody(responseBody);
+var response = restMessage.execute();
 
 
-    } else {
-
-        var unauthorized = new sn_ws_err.ServiceError();
-        unauthorized.setStatus(401);
-        unauthorized.setMessage('INC SYS_ID QUERY PARAMETER MISSING OR INVALID');
-
-        response.setError(unauthorized);
-
-    }
+var httpStatus = response.getStatusCode();
 
 
+var responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
 
-
-})(request, response);
+gs.print("status:" + httpStatus)
+gs.print(responseBody)
