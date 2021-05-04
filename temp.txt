@@ -1,3 +1,5 @@
+// https://hackmd.io/_IR5YqTBQpe4kMdXUd_b9w
+
 var restMessage = new sn_ws.RESTMessageV2();
 restMessage.setEndpoint('https://amerendev.service-now.com/oauth_token.do');
 restMessage.setHttpMethod('post');
